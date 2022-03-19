@@ -81,7 +81,7 @@ const ProjectObject = ({ title, description, link, images }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="min-h-screen w-full py-8 px-4 mt-8">
+    <section id="projects" className="min-h-screen w-full py-8 sm:px-4 mt-8">
       <p className="text-white font-misc font-semibold text-4xl sm:text-6xl transition-all decoration-emerald-400 mb-16">
         Projects
       </p>

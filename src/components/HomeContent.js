@@ -2,7 +2,7 @@ import React from "react"
 
 const HomeContent = () => {
   return (
-    <section id="home" className="min-h-screen w-full py-8 px-4">
+    <section id="home" className="min-h-screen w-full py-8 sm:px-4">
       <p className="text-white font-misc font-semibold text-4xl lg:transition-all decoration-emerald-400 mb-16 sm_576:text-6xl">
         <span className="text-teal-400">Hello, </span>
         <br></br>

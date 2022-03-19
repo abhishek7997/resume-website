@@ -15,7 +15,7 @@ const Contact = () => {
   let [contact, setContact] = useState(undefined)
 
   return (
-    <section id="contact" className="min-h-[90vh] w-full py-8 px-4 mt-8">
+    <section id="contact" className="min-h-[90vh] w-full py-8 sm:px-4 mt-8">
       <p className="text-white font-misc font-semibold text-6xl transition-all decoration-emerald-400 mb-16 scr_931m:text-4xl">
         Contact
       </p>
@@ -27,14 +27,13 @@ const Contact = () => {
               className="text-emerald-300 font-misc text-xl sm:text-3xl cursor-pointer lg:hover:text-emerald-400"
               onClick={() => setContact(decodeEmail(EMAIL))}
             >
-              {"<! Click to reveal email !>"}
+              {"<!Click to reveal email!>"}
             </p>
           ) : (
             <a
               href={`mailto:${contact}`}
               className="text-white font-misc text-xl sm:text-3xl"
             >
-              Email :{" "}
               <span className="lg:hover:text-emerald-400 lg:transition-all">
                 {contact}
               </span>

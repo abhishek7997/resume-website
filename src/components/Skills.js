@@ -61,7 +61,7 @@ const SkillObject = ({ title, logo }) => {
         className="h-16 sm:h-24 mb-4"
         alt={`logo-${title}`}
       />
-      <p className="text-lg sm:text-2xl text-center lg:transition-all ease-in lg:hover:text-emerald-400">
+      <p className="sm:text-2xl text-center lg:transition-all ease-in lg:hover:text-emerald-400">
         {title}
       </p>
     </div>
