@@ -8,6 +8,11 @@ const SideBar = () => {
 
     e.preventDefault()
 
+    if (location === "home") {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+      return
+    }
+
     destination &&
       destination.scrollIntoView({
         behavior: "smooth",
@@ -15,14 +20,14 @@ const SideBar = () => {
       })
   }
   return (
-    <aside className="sticky left-0 top-0 max-h-screen w-64 min-w-max bg-[#4d585f] smm:hidden">
+    <aside className="sticky left-0 top-0 max-h-screen w-64 min-w-max bg-[#4d585f] hidden sm:block">
       <ul>
         {links.map((link) => {
           return (
             <li
               key={`id-sidebar-${link}`}
               onClick={handleClick}
-              className="bg-[#4d585f] hover:bg-[#333539] pl-4 py-3.5 text-white text-xl hover:text-2xl transition-all hover:cursor-pointer"
+              className="bg-[#4d585f] hover:bg-[#333539] pl-4 py-3.5 text-white text-xl hover:text-2xl lg:transition-all hover:cursor-pointer"
             >
               {link}
             </li>

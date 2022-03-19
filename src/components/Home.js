@@ -7,7 +7,7 @@ import Contact from "./Contact"
 
 const Home = () => {
   return (
-    <div className="w-5/6 py-16 px-8 smm:w-screen">
+    <div className="sm_576:w-5/6 sm:pt-16 pb-16 px-8 w-screen">
       <HomeContent />
       <Skills />
       <Projects />

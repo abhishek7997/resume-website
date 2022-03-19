@@ -53,15 +53,15 @@ const SKILLS = [
 
 const SkillObject = ({ title, logo }) => {
   return (
-    <div className="max-w-24 py-4 px-4 flex flex-col items-center justify-evenly hover:bg-[#232425] font-misc text-white border-4 rounded-tl-3xl rounded-br-3xl border-[#4d585f] hover:border-emerald-400 hover:border-3 transition-all">
+    <div className="max-w-24 px-2 py-2 sm:px-4 sm:py-4 flex flex-col items-center justify-evenly hover:bg-[#232425] font-misc text-white border-4 rounded-tl-3xl rounded-br-3xl border-[#4d585f] lg:hover:border-emerald-400 lg:hover:border-3 lg:transition-all">
       <img
         src={logo}
         onMouseDown={(e) => e.preventDefault()}
         onContextMenu={(e) => e.preventDefault()}
-        className="h-24 mb-4"
+        className="h-16 sm:h-24 mb-4"
         alt={`logo-${title}`}
       />
-      <p className="text-2xl text-center transition-all ease-in hover:text-emerald-400">
+      <p className="text-lg sm:text-2xl text-center lg:transition-all ease-in lg:hover:text-emerald-400">
         {title}
       </p>
     </div>
@@ -70,11 +70,11 @@ const SkillObject = ({ title, logo }) => {
 
 const Skills = () => {
   return (
-    <section id="skills" className="min-h-screen w-full py-8 px-4 mt-8">
-      <p className="text-white font-misc font-semibold text-6xl transition-all decoration-emerald-400 mb-16 smmm:text-4xl">
+    <section id="skills" className="min-h-screen w-full py-8 sm:px-4 mt-8">
+      <p className="text-white font-misc font-semibold text-4xl sm:text-6xl lg:transition-all decoration-emerald-400 mb-16">
         Skills & Technologies
       </p>
-      <div className="grid grid-cols-4 grid-rows-3 gap-x-8 gap-y-12 lgm:grid-cols-2 lgm:grid-rows-6 smmm:grid-cols-1 smmm:grid-rows-12 smmm:px-8">
+      <div className="grid gap-x-8 gap-y-12 grid-cols-2 grid-rows-6 sm:px-8 lg:grid-cols-4 lg:grid-rows-3 lg:px-0 md:grid-cols-2 md:grid-rows-6">
         {SKILLS.map((skill) => {
           return (
             <SkillObject

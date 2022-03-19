@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaulttheme")
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -7,6 +9,9 @@ module.exports = {
       misc: ["IBM Plex Mono", "monospace"],
     },
     screens: {
+      ...defaultTheme.screens,
+      sm_576: "576px",
+      scr_931: "931px",
       "2xlm": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
       xlm: { max: "1279px" },

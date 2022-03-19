@@ -43,17 +43,18 @@ const ProjectObject = ({ title, description, link, images }) => {
 
   const linkClickHandler = (e) => {
     e.preventDefault()
+    window.open(link, "_blank").focus()
   }
 
   return (
     <div
       onClick={projectClickHandler}
-      className="w-full flex flex-row scr_931m:flex-col h-full items-start border-4 border-[#4d585f] p-4 hover:border-emerald-400 hover:bg-[#232425] transition-all"
+      className="w-full flex flex-col scr_931:flex-row h-full items-start border-4 border-[#4d585f] p-4 lg:hover:border-emerald-400 lg:hover:bg-[#232425] lg:transition-all"
     >
-      <div className="min-w-max scr_931m:w-full scr_931m:min-w-0 mr-2 overflow-clip">
+      <div className="scr_931:min-w-max smm:w-full min-w-0 mr-2 overflow-clip">
         <img
           src={images}
-          className="w-48 scr_931m:w-full scr_931m:mb-4 h-48 scr_931m:h-64 mr-2 object-cover object-center hover:scale-125 transition-all duration-300 ease-in"
+          className="w-full h-64 scr_931:w-48 scr_931:h-48 mb-4 mr-2 object-cover object-center lg:hover:scale-125 lg:transition-all lg:duration-300 lg:ease-in"
           alt=""
           onContextMenu={(e) => e.preventDefault()}
         />
@@ -62,15 +63,15 @@ const ProjectObject = ({ title, description, link, images }) => {
         onClick={(e) => e.stopPropagation()}
         className="w-full ml-2 scr_931m:ml-0 flex flex-col space-y-4"
       >
-        <p className="text-white font-misc text-3xl">{title}</p>
+        <p className="text-white font-misc text-2xl sm:text-3xl">{title}</p>
         <p className="text-white font-misc font-light text-xl">{description}</p>
         {link && (
           <a
-            className="text-white font-misc font-light text-lg hover:text-emerald-400 transition-all break-words"
+            className="text-white font-misc font-light inline-block text-lg lg:hover:text-emerald-400 lg:transition-all max-w-fit"
             href={link ?? ""}
             onClick={linkClickHandler}
           >
-            {link ?? "Not Available"}
+            {link ? "Link" : "Not Available"}
           </a>
         )}
       </div>
@@ -81,7 +82,7 @@ const ProjectObject = ({ title, description, link, images }) => {
 const Projects = () => {
   return (
     <section id="projects" className="min-h-screen w-full py-8 px-4 mt-8">
-      <p className="text-white font-misc font-semibold text-6xl transition-all decoration-emerald-400 mb-16">
+      <p className="text-white font-misc font-semibold text-4xl sm:text-6xl transition-all decoration-emerald-400 mb-16">
         Projects
       </p>
       <div className="flex flex-col w-full space-y-6">
