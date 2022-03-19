@@ -46,6 +46,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/abhishek-m-3610541b6"
             className="text-white font-misc text-xl sm:text-3xl lg:hover:text-emerald-400 lg:transition-all"
             target="_blank"
+            rel="noreferrer"
           >
             LinkedIn
           </a>
@@ -55,6 +56,7 @@ const Contact = () => {
             href="https://www.github.com/abhishek7997"
             className="text-white font-misc text-xl sm:text-3xl lg:hover:text-emerald-400 lg:transition-all"
             target="_blank"
+            rel="noreferrer"
           >
             Github
           </a>

@@ -17,8 +17,9 @@ const HomeContent = () => {
       </p>
       <a
         className="text-white font-misc text-4xl border-2 hover:bg-[#232425] hover:border-emerald-400 px-8 py-2 transition-all"
-        href="#"
+        href="https://www.google.com"
         target="_blank"
+        rel="noreferrer"
       >
         Resume
       </a>
