@@ -1,7 +1,7 @@
 import React from "react"
 
 const SideBar = () => {
-  const links = ["Home", "Skills", "Projects", "Work Experience", "Contact"]
+  const links = ["Home", "Skills", "Projects", "Experience", "Contact"]
   const handleClick = (e) => {
     let location = e.target.innerText.toLowerCase().replaceAll(" ", "-")
     let destination = document.getElementById(location)

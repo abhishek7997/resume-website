@@ -18,6 +18,14 @@ const PROJECTS = [
     image: "images/projects/lyrics-finder.png",
   },
   {
+    title: "Citation Sentiment Extractor (R&D)",
+    description:
+      "Parse text from research paper PDF, extract citations, apply machine learning to estimate sentiment of citation text",
+    link: "https://github.com/abhishek7997/citation-sentiment-analysis",
+    source_code: "",
+    image: "images/projects/citation-extraction.png",
+  },
+  {
     title: "Snake Game (HTML + CSS + Javascript)",
     description:
       "Simple Snake Game built using HTML Canvas, CSS and Javascript",

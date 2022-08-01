@@ -56,9 +56,9 @@ const WorkExperienceObject = ({ workExperience }) => {
 
 const WorkExperience = () => {
   return (
-    <section id="work-experience" className="w-full py-8 sm:px-4 mt-8">
+    <section id="experience" className="w-full py-8 sm:px-4 mt-8">
       <p className="text-white font-misc font-semibold text-6xl transition-all decoration-emerald-400 mb-16 smm:text-4xl">
-        Work Experience
+        Experience
       </p>
       <div>
         {WORK_EXPERIENCES.map((work_experience) => {

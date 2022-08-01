@@ -17,7 +17,7 @@ const HomeContent = () => {
       </p>
       <a
         className="text-white font-misc text-4xl border-2 hover:bg-[#232425] hover:border-emerald-400 px-8 py-2 transition-all"
-        href="https://www.google.com"
+        href="https://drive.google.com/file/d/1S5vDBphMR4M9bogkUfB_occMJ3T82SW8/view?usp=sharinghttps://drive.google.com/file/d/1S5vDBphMR4M9bogkUfB_occMJ3T82SW8/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
       >
