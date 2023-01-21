@@ -25,6 +25,15 @@ module.exports = {
       title: ['"Open Sans"'],
       misc: ["IBM Plex Mono", "monospace"],
     },
+    animation: {
+      fade: "fadeIn 1s ease-in-out",
+    },
+    keyframes: (theme) => ({
+      fadeIn: {
+        "0%": { opacity: 0 },
+        "100%": { opacity: 1 },
+      },
+    }),
   },
   plugins: [],
 }

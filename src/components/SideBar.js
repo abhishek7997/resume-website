@@ -4,7 +4,7 @@ const SideBar = () => {
   const links = ["Home", "Skills", "Projects", "Experience", "Contact"]
   const handleClick = (e) => {
     let location = e.target.innerText.toLowerCase().replaceAll(" ", "-")
-    let destination = document.getElementById(location)
+    let destination = document.getElementById(location) ?? null
 
     e.preventDefault()
 
@@ -27,7 +27,7 @@ const SideBar = () => {
             <li
               key={`id-sidebar-${link}`}
               onClick={handleClick}
-              className="bg-[#4d585f] hover:bg-[#333539] pl-4 py-3.5 text-white text-xl hover:text-2xl lg:transition-all hover:cursor-pointer"
+              className="bg-[#4d585f] hover:bg-[#333539] pl-12 py-8 text-white text-xl hover:text-2xl lg:transition-all hover:cursor-pointer"
             >
               {link}
             </li>
