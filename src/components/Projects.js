@@ -57,12 +57,12 @@ const ProjectObject = ({ title, description, link, images }) => {
   return (
     <div
       onClick={projectClickHandler}
-      className="w-full flex flex-col scr_931:flex-row h-full items-start border-4 border-[#4d585f] p-4 lg:hover:border-emerald-400 lg:hover:bg-[#232425] lg:transition-all"
+      className="w-full flex flex-col scr_931:flex-row h-full items-start border-4 border-[#4d585f] p-4 sm:hover:border-emerald-400 sm:hover:bg-[#232425] sm:transition-all"
     >
       <div className="scr_931:min-w-max smm:w-full min-w-0 mr-2 overflow-clip">
         <img
           src={images}
-          className="w-full h-64 scr_931:w-48 scr_931:h-48 mb-4 mr-2 object-cover object-center lg:hover:scale-125 lg:transition-all lg:duration-300 lg:ease-in"
+          className="w-full h-64 scr_931:w-48 scr_931:h-48 mb-4 mr-2 object-cover object-center sm:hover:scale-125 sm:transition-all sm:duration-300 sm:ease-in"
           alt=""
           onContextMenu={(e) => e.preventDefault()}
         />
@@ -75,7 +75,7 @@ const ProjectObject = ({ title, description, link, images }) => {
         <p className="text-white font-misc font-light text-xl">{description}</p>
         {link && (
           <a
-            className="text-white font-misc font-light inline-block text-lg lg:hover:text-emerald-400 lg:transition-all max-w-fit"
+            className="text-white font-misc font-light inline-block text-lg sm:hover:text-emerald-400 lg:transition-all max-w-fit"
             href={link ?? ""}
             onClick={linkClickHandler}
           >

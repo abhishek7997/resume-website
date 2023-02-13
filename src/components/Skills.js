@@ -2,12 +2,8 @@ import React from "react"
 
 const SKILLS = [
   {
-    title: "HTML",
-    logo: "images/logo-html5.svg",
-  },
-  {
-    title: "CSS",
-    logo: "images/logo-css3.svg",
+    title: "Python",
+    logo: "images/logo-python3.svg",
   },
   {
     title: "Javascript",
@@ -22,16 +18,8 @@ const SKILLS = [
     logo: "images/logo-nextjs.svg",
   },
   {
-    title: "Tailwind CSS",
-    logo: "images/logo-tailwindcss.svg",
-  },
-  {
-    title: "Material UI",
-    logo: "images/logo-materialui.svg",
-  },
-  {
-    title: "Python",
-    logo: "images/logo-python3.svg",
+    title: "NodeJS",
+    logo: "images/logo-nodejs.svg",
   },
   {
     title: "MongoDB",
@@ -48,6 +36,22 @@ const SKILLS = [
   {
     title: "Git",
     logo: "images/logo-git.svg",
+  },
+  {
+    title: "Material UI",
+    logo: "images/logo-materialui.svg",
+  },
+  {
+    title: "Tailwind CSS",
+    logo: "images/logo-tailwindcss.svg",
+  },
+  {
+    title: "HTML",
+    logo: "images/logo-html5.svg",
+  },
+  {
+    title: "CSS",
+    logo: "images/logo-css3.svg",
   },
 ]
 
