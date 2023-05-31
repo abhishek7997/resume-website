@@ -10,6 +10,10 @@ const SKILLS = [
     logo: "images/logo-javascript.svg",
   },
   {
+    title: "Java",
+    logo: "images/logo-java.svg",
+  },
+  {
     title: "Reactjs",
     logo: "images/logo-reactjs.svg",
   },
@@ -57,7 +61,7 @@ const SKILLS = [
 
 const SkillObject = ({ title, logo }) => {
   return (
-    <div className="max-w-24 px-2 py-2 sm:px-4 sm:py-4 flex flex-col items-center justify-evenly hover:bg-[#232425] font-misc text-white border-4 rounded-tl-3xl rounded-br-3xl border-[#4d585f] lg:hover:border-emerald-400 lg:hover:border-3 lg:transition-all">
+    <div className="max-w-22 px-2 py-2 sm:px-4 sm:py-4 flex flex-col items-center justify-evenly hover:bg-[#232425] font-misc text-white border-4 rounded-tl-3xl rounded-br-3xl border-[#4d585f] lg:hover:border-emerald-400 lg:hover:border-3 lg:transition-all">
       <img
         src={logo}
         onMouseDown={(e) => e.preventDefault()}
@@ -78,7 +82,7 @@ const Skills = () => {
       <p className="text-white font-misc font-semibold text-4xl sm:text-6xl lg:transition-all decoration-emerald-400 mb-16">
         Skills & Technologies
       </p>
-      <div className="grid gap-x-8 gap-y-12 grid-cols-2 grid-rows-6 sm:px-8 lg:grid-cols-4 lg:grid-rows-3 lg:px-0 md:grid-cols-2 md:grid-rows-6">
+      <div className="grid gap-x-10 gap-y-12 grid-cols-2 grid-rows-6 sm:px-8 lg:grid-cols-4 lg:grid-rows-3 lg:px-0 md:grid-cols-2 md:grid-rows-6">
         {SKILLS.map((skill) => {
           return (
             <SkillObject

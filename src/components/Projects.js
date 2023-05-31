@@ -18,12 +18,20 @@ const PROJECTS = [
     image: "images/projects/lyrics-finder.png",
   },
   {
-    title: "Citation Sentiment Extractor (R&D)",
+    title: "CiteExtract: PDF Citation Sentence Extractor",
     description:
-      "Parse text from research paper PDF, extract citations, apply machine learning to estimate sentiment of citation text",
-    link: "https://github.com/abhishek7997/citation-sentiment-analysis",
+      "Python tool for extracting and parsing text from Research Paper PDFs. Identifies citations and associated paragraphs. Collects and categorizes adjectives as positive or negative using a predefined word list.",
+    link: "https://github.com/abhishek7997/cite-extract-python",
     source_code: "",
     image: "images/projects/citation-extraction.png",
+  },
+  {
+    title: "LapShop",
+    description:
+      "Online laptop shopping website with state management with Redux Toolkit. Data is stored and retrieved from a MongoDB database.",
+    link: "https://lapshop-mern.onrender.com/",
+    source_code: "",
+    image: "images/projects/lapshop.png",
   },
   {
     title: "Snake Game (HTML + CSS + Javascript)",
@@ -77,6 +85,7 @@ const ProjectObject = ({ title, description, link, images }) => {
           <a
             className="text-white font-misc font-light inline-block text-lg sm:hover:text-emerald-400 lg:transition-all max-w-fit"
             href={link ?? ""}
+            rel="noreferrer"
             onClick={linkClickHandler}
           >
             {link ? "Link" : "Not Available"}

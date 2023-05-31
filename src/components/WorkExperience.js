@@ -3,9 +3,16 @@ import React from "react"
 const WORK_EXPERIENCES = [
   {
     company: "NbliK",
-    role: "SDE 1 (Reactjs Developer)",
-    description:
-      "Worked as a part-time Front-End Website Developer for about 3 months in a company with experience building User Interfaces of the website using the NextJS (ReactJS) framework.",
+    role: "Software Development Engineer (SDE) - Intern",
+    description: [
+      "\u2022 Enhanced user experience by developing and maintaining web pages using Next.js and MaterialUI.",
+      <br />,
+      "\u2022 Implemented an events page with yup resolver and MaterialUI form fields.",
+      <br />,
+      "\u2022 Integrated APIs for secure user authentication on Signup and Login pages.",
+      <br />,
+      "\u2022 Improved page visibility by incorporating meta tags into relevant components.",
+    ],
     duration: "3 months",
     start: "October 2021",
     end: "January 2021",
@@ -18,10 +25,6 @@ const WorkExperienceObject = ({ workExperience }) => {
     workExperience
   const projectClickHandler = () => {
     window.open(link, "_blank").focus()
-  }
-
-  const linkClickHandler = (e) => {
-    e.preventDefault()
   }
 
   return (
@@ -39,12 +42,16 @@ const WorkExperienceObject = ({ workExperience }) => {
         <p className="text-white font-misc text-2xl">
           {duration} - {start} to {end}
         </p>
-        <p className="text-white font-misc font-light text-xl">{description}</p>
+        <p className="text-white font-misc font-light text-xl leading-relaxed">
+          {description}
+        </p>
         {link && (
           <a
             className="text-white font-misc font-light text-lg hover:text-emerald-400 transition-all"
-            href={link ?? ""}
-            onClick={linkClickHandler}
+            // style={{ display: "inline-block", width: "fit-content" }}
+            href={link}
+            rel="noreferrer"
+            target="_blank"
           >
             {link ?? "Not Available"}
           </a>
