@@ -10,12 +10,11 @@ const PROJECTS = [
     image: "images/projects/image-search.png",
   },
   {
-    title: "Lyrics Finder (Nextjs + Typescript)",
+    title: "dForum",
     description:
-      "Search for the lyrics of any song. The project uses MusixMatch API.",
-    link: "https://abhisheklyricsfinder.netlify.app/",
-    source_code: "",
-    image: "images/projects/lyrics-finder.png",
+      "An internet messaging board implemented with Angular, Spring Boot, MySQL, and user authentication managed by Spring Security.",
+    link: "https://github.com/abhishek7997/dforum",
+    image: "images/projects/dforum.png",
   },
   {
     title: "CiteExtract: PDF Citation Sentence Extractor",
@@ -24,6 +23,14 @@ const PROJECTS = [
     link: "https://github.com/abhishek7997/cite-extract-python",
     source_code: "",
     image: "images/projects/citation-extraction.png",
+  },
+  {
+    title: "Lyrics Finder (Nextjs + Typescript)",
+    description:
+      "Search for the lyrics of any song. The project uses MusixMatch API.",
+    link: "https://abhisheklyricsfinder.netlify.app/",
+    source_code: "",
+    image: "images/projects/lyrics-finder.png",
   },
   {
     title: "LapShop",

@@ -14,6 +14,10 @@ const SKILLS = [
     logo: "images/logo-java.svg",
   },
   {
+    title: "Angular",
+    logo: "images/logo-angular.svg",
+  },
+  {
     title: "Reactjs",
     logo: "images/logo-reactjs.svg",
   },
@@ -24,6 +28,10 @@ const SKILLS = [
   {
     title: "NodeJS",
     logo: "images/logo-nodejs.svg",
+  },
+  {
+    title: "MySQL",
+    logo: "images/logo-mysql.svg",
   },
   {
     title: "MongoDB",
