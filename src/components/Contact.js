@@ -2,8 +2,8 @@ import React, { useState } from "react"
 
 const Contact = () => {
   const EMAIL = [
-    109, 97, 98, 104, 105, 115, 104, 101, 107, 49, 48, 48, 50, 64, 103, 109, 97,
-    105, 108, 46, 99, 111, 109,
+    97, 98, 104, 105, 115, 104, 101, 107, 109, 46, 119, 111, 114, 107, 50, 48,
+    64, 103, 109, 97, 105, 108, 46, 99, 111, 109,
   ]
 
   const decodeEmail = (codes) => {
@@ -11,7 +11,6 @@ const Contact = () => {
     return email
   }
 
-  // let contact
   let [contact, setContact] = useState(undefined)
 
   return (
@@ -27,7 +26,7 @@ const Contact = () => {
               className="text-emerald-300 font-misc text-xl sm:text-3xl cursor-pointer lg:hover:text-emerald-400"
               onClick={() => setContact(decodeEmail(EMAIL))}
             >
-              {"<!Click to reveal email!>"}
+              {"For email address, click here."}
             </p>
           ) : (
             <a

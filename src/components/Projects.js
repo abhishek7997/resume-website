@@ -2,19 +2,26 @@ import React from "react"
 
 const PROJECTS = [
   {
+    title: "dForum",
+    description:
+      "An internet messaging board implemented with Angular, Spring Boot, MySQL, and user authentication managed by Spring Security.",
+    link: "https://github.com/abhishek7997/dforum",
+    image: "images/projects/dforum.png",
+  },
+  {
+    title: "Dangerous Dave SDL",
+    description:
+      "Re-creation of the old DOS game Dangerous Dave in C++ with SDL.",
+    link: "https://github.com/abhishek7997/dangerous_dave_sdl",
+    image: "images/projects/dd_sdl.png",
+  },
+  {
     title: "Image Search (Reactjs + MaterialUI)",
     description:
       "Search for images using the Pixabay API, search is dynamic and results change with each user input.",
     link: "https://abhishekimagesearch.netlify.app/",
     source_code: "",
     image: "images/projects/image-search.png",
-  },
-  {
-    title: "dForum",
-    description:
-      "An internet messaging board implemented with Angular, Spring Boot, MySQL, and user authentication managed by Spring Security.",
-    link: "https://github.com/abhishek7997/dforum",
-    image: "images/projects/dforum.png",
   },
   {
     title: "CiteExtract: PDF Citation Sentence Extractor",
@@ -33,28 +40,12 @@ const PROJECTS = [
     image: "images/projects/lyrics-finder.png",
   },
   {
-    title: "LapShop",
-    description:
-      "Online laptop shopping website with state management with Redux Toolkit. Data is stored and retrieved from a MongoDB database.",
-    link: "https://lapshop-mern.onrender.com/",
-    source_code: "",
-    image: "images/projects/lapshop.png",
-  },
-  {
     title: "Snake Game (HTML + CSS + Javascript)",
     description:
       "Simple Snake Game built using HTML Canvas, CSS and Javascript",
     link: "https://abhisheksnakegame.netlify.app/",
     source_code: "",
     image: "images/projects/snake-game.png",
-  },
-  {
-    title: "Weight Tracker (Flutter)",
-    description:
-      "Flutter app that allows the user to keep track of their weight",
-    link: "https://github.com/abhishek7997/weight-tracker",
-    source_code: "",
-    image: "images/projects/weight-tracker.png",
   },
 ]
 

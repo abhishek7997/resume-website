@@ -13,19 +13,18 @@ const HomeContent = () => {
           Abhishek
         </span>
       </p>
-      <p className="text-white text-2xl font-misc mb-16 sm:text-3xl">
-        I'm a fourth-year B.Tech student with a strong passion for coding and
+      <p className="text-white text-2xl font-misc mb-16 sm:text-2xl">
+        I'm working as a software engineer who enjoys building projects and
         solving problems.
         <br />
-        <br />I create websites that offer seamless experiences across different
-        devices. I have hands-on experience with various web frameworks like
-        ReactJS and Angular, as well as the versatile app framework called
-        Flutter.
+        <br />
+        I have gained exposure to various technologies and applied them in
+        building projects. For frontend development, I used ReactJS, Redux, and
+        Angular. On the backend, I have used Nodejs, ExpressJS, and Spring Boot,
+        and integrated databases such as MySQL and MongoDB.
         <br />
         <br />
-        In addition to web development, I'm also interested in Machine Learning.
-        I've studied basic Regression and Classification algorithms to better
-        understand how data can be analyzed and patterns can be identified.
+        Additionally, I learned Flutter and built small android projects.
       </p>
       <a
         className="text-white font-misc text-4xl border-2 hover:bg-[#232425] hover:border-emerald-400 px-8 py-2 transition-all"

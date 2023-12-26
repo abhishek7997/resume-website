@@ -2,6 +2,22 @@ import React from "react"
 
 const WORK_EXPERIENCES = [
   {
+    company: "Western Union",
+    role: "Trainee Associate, Solution Engineering",
+    description: [],
+    duration: "Present",
+    start: "August 2023",
+    end: null,
+  },
+  {
+    company: "Western Union",
+    role: "Trainee",
+    description: [],
+    duration: "6 months",
+    start: "Jan 2023",
+    end: "July 2023",
+  },
+  {
     company: "NbliK",
     role: "Software Development Engineer (SDE) - Intern",
     description: [
@@ -30,7 +46,7 @@ const WorkExperienceObject = ({ workExperience }) => {
   return (
     <div
       onClick={projectClickHandler}
-      className="w-full flex flex-row h-full items-start border-4 border-[#4d585f] p-4 hover:border-emerald-400 hover:bg-[#232425] transition-all"
+      className="w-full flex flex-row h-full items-start border-4 border-[#4d585f] p-4 hover:border-emerald-400 hover:bg-[#232425] transition-all mt-4"
     >
       <div
         className="w-full ml-2 flex flex-col space-y-4"
@@ -39,9 +55,14 @@ const WorkExperienceObject = ({ workExperience }) => {
         <p className="text-white font-misc text-3xl">
           {company} - {role}
         </p>
-        <p className="text-white font-misc text-2xl">
-          {duration} - {start} to {end}
-        </p>
+        {end ? (
+          <p className="text-white font-misc text-2xl">
+            {duration} - {start} to {end}
+          </p>
+        ) : (
+          <p className="text-white font-misc text-2xl">{start} - Present</p>
+        )}
+
         <p className="text-white font-misc font-light text-xl leading-relaxed">
           {description}
         </p>
