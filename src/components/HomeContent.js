@@ -21,7 +21,7 @@ const HomeContent = () => {
         I have gained exposure to various technologies and applied them in
         building projects. For frontend development, I used ReactJS, Redux, and
         Angular. On the backend, I have used Nodejs, ExpressJS, and Spring Boot,
-        and integrated databases such as MySQL and MongoDB.
+        and databases such as MySQL and MongoDB.
         <br />
         <br />
         Additionally, I learned Flutter and built small android projects.
