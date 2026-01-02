@@ -1,4 +1,3 @@
-import React from "react"
 import HomeContent from "./HomeContent"
 import Skills from "./Skills"
 import Projects from "./Projects"

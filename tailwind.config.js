@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       screens: {
@@ -11,6 +11,7 @@ module.exports = {
         // => @media (max-width: 1279px) { ... }
         lgm: { max: "1023px" },
         // => @media (max-width: 1023px) { ... }
+        scr_864m: "864px",
         scr_931m: { max: "931px" },
         // => @media (max-width: 931px) { ... }
         mdm: { max: "767px" },

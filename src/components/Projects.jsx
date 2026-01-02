@@ -1,5 +1,3 @@
-import React from "react"
-
 const PROJECTS = [
   {
     title: "dForum",
@@ -9,11 +7,11 @@ const PROJECTS = [
     image: "images/projects/dforum.png",
   },
   {
-    title: "Dangerous Dave SDL",
+    title: "Platformer 2.0",
     description:
-      "Re-creation of the old DOS game Dangerous Dave in C++ with SDL.",
-    link: "https://github.com/abhishek7997/dangerous_dave_sdl",
-    image: "images/projects/dd_sdl.png",
+      "Implementation of a 2D side scrolling 2D platformer game using C++ 17 and SDL 2.0.",
+    link: "https://github.com/abhishek7997/platformer_2d",
+    image: "images/projects/plt_sdl.png",
   },
   {
     title: "Image Search (Reactjs + MaterialUI)",

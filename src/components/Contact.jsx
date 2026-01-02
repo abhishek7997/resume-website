@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 
 const Contact = () => {
   const EMAIL = [
@@ -22,12 +22,12 @@ const Contact = () => {
       <div className="w-full space-y-5">
         <p>
           {contact === undefined ? (
-            <p
+            <span
               className="text-emerald-300 font-misc text-xl sm:text-3xl cursor-pointer lg:hover:text-emerald-400"
               onClick={() => setContact(decodeEmail(EMAIL))}
             >
               {"For email address, click here."}
-            </p>
+            </span>
           ) : (
             <a
               href={`mailto:${contact}`}
